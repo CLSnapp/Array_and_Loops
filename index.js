@@ -66,10 +66,13 @@ function getMean(numbers) {
  * @returns {number} the smallest of the numbers
  */
 function getMin(numbers) {
-  let min = 0;
-  for (const n of numbers) {
-    if (n < min) {
-      min = n;
+  let min = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    const num = numbers[i];
+    {
+      if (num < min) {
+        min = num;
+      }
     }
   }
   return min;
@@ -80,10 +83,13 @@ function getMin(numbers) {
  * @returns {number} the largest of the numbers
  */
 function getMax(numbers) {
-  let max = 0;
-  for (const n of numbers) {
-    if (n > max) {
-      max = n;
+  let max = numbers[0];
+  for (let i = 1; i < numbers.length; i++) {
+    const num = numbers[i];
+    {
+      if (num > max) {
+        max = num;
+      }
     }
   }
   return max;
