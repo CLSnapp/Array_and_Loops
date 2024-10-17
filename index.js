@@ -109,9 +109,10 @@ function getRange(numbers) {
  */
 function getEvens(numbers) {
   let evens = [];
-  for (const n of numbers) {
-    if (n % 2 === 0) {
-      evens.push(n);
+  for (let i = 0; i < numbers.length; i++) {
+    const num = numbers[i];
+    if (num % 2 === 0) {
+      evens.push(num);
     }
   }
   return evens;
@@ -123,9 +124,10 @@ function getEvens(numbers) {
  */
 function getOdds(numbers) {
   let odds = [];
-  for (const n of numbers) {
-    if (n % 2 !== 0) {
-      odds.push(n);
+  for (let i = 0; i < numbers.length; i++) {
+    const num = numbers[i];
+    if (num % 2 !== 0) {
+      odds.push(num);
     }
   }
   return odds;
