@@ -67,7 +67,7 @@ function getMean(numbers) {
  */
 function getMin(numbers) {
   let min = numbers[0];
-  for (let i = 1; i < numbers.length; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     const num = numbers[i];
     {
       if (num < min) {
@@ -84,7 +84,7 @@ function getMin(numbers) {
  */
 function getMax(numbers) {
   let max = numbers[0];
-  for (let i = 1; i < numbers.length; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     const num = numbers[i];
     {
       if (num > max) {
